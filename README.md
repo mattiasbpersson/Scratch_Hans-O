@@ -10,13 +10,6 @@ Grafik: https://scratch.mit.edu/users/MaEk_Animations/
 
 [Presentation (Google slides)](https://docs.google.com/presentation/d/1tH18PLq121Lf-I-n7h0owph1vQ9ijZxFO6_KBWH7MSA/edit?usp=sharing)
 
-#### Innehållsförteckning
-[Förberedelser](#förberedelser)  
-[Hans-Olof](#hans-olof)  
-[Kasta besvärjelse](#kasta-besvärjelse)  
-[Moorgerna kommer](#moorgerna-kommer)  
-[Gravitation](#gravitation)  
-[Extra saker](#extra-saker)  
 
 ## Förberedelser
 * Hitta igen följande projekt och spara ner alla sprites i din ryggsäck: [https://scratch.mit.edu/projects/200419789/](https://scratch.mit.edu/projects/200419789/)
@@ -69,7 +62,7 @@ Mulle-vadarna ska också sluta gå då de kommer fram till muren eller blir trä
 Vi vill kunna skjuta flera pilar om det kommer många Mulle-vadar
 
 ### Pilen ska försvinna vid träff
-Börja med att lägga till att om en mulle-vad träffas av en pil så pilen försvinna.
+Börja med att lägga till att om en Mulle-vad träffas av en pil så pilen försvinna.
 ![Arrow remove](images/arrow_remove.png "Arrow remove")
 
 ### Flera pilar
@@ -87,12 +80,28 @@ När Mulle-vaden blir bekämpad så ska den försvinna.
 ![Remove mulle](images/mulle_die.png "Remove mulle")
 
 ## Mulle-vadarna gräver sig upp
+### Visa hålen
+Lägg till hålen från ryggsäcken och kopiera koden från hur Mulle-vadarna kommer fram.
+![Spawn hole](images/spawn_hole.png "Spawn hole")
 
- 
+### Mulle-vaden kommer till hålet
+Detta funkar inte men är en första version
+![Faulty mulle](images/mull_spawn_faulty.png "Faulty mulle")
+
+### Inga kloner ska flyttas till hålet
+Vi kollar så att om man inte är en clone så får man flyttas
+![No clone spawn](images/spawn_not_clone_in_hole.png "No clone spawn")
+
+### Animera hålen
+Hålen kommer fram och försvinner efter ett tag.
+![Animate spawner](images/spawner_complete.png "Animate Spawner")
+
+Kom ihåg att lägga till en sleep på 1.3 sekunder för varje "when I start as a clone" i Mulle-vadarna
+
 ## Extra saker
 * En "Game Over" skärm
 * Livspoäng på muren
-* Skjuta ult då man bekämpat ett antal mulle-vadar.
+* Skjuta ult då man bekämpat ett antal Mulle-vadar.
 
 
 
