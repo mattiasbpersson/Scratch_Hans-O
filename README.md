@@ -36,7 +36,7 @@ Flytta in pilen från ryggsäcken.
 ![Arrow Start](images/arrow_start.png "Arrow start")
 
 ### Skjut pilen
-Pilen ska skjutas i den riktning den har.
+Pilen ska skjutas i riktning mot muspekaren.
   
 ![Arrow shot](images/arrow_shoot.png "Arrow shot")
 
@@ -51,7 +51,7 @@ Mulle-vaden ska hela tiden gå (animera)
 
 ![Mulle walk](images/mulle-walk.png "Mulle walk")
 
-### Mulle-vaden ska komma på slumpmässiga 
+### Mulle-vaden ska komma på slumpmässiga platser
 När Mulle-vadarana placeras på skärmen så ska det vara slumpmässigt var de hamnar.
 Mulle-vadarna ska också sluta gå då de kommer fram till muren eller blir träffade av pilen.
 
@@ -72,28 +72,34 @@ Börja med att lägga till att om en Mulle-vad träffas av en pil så pilen för
 
 ## Flera Mulle-vadar
 Det här blir ganska mycket ändringar men vi visar det bit för bit.
+
 ![Clone mulle](images/mulle_clone.png "Clone mulle")
 
 
 ### Mulle-vaden försvinner
 När Mulle-vaden blir bekämpad så ska den försvinna.
+
 ![Remove mulle](images/mulle_die.png "Remove mulle")
 
 ## Mulle-vadarna gräver sig upp
 ### Visa hålen
 Lägg till hålen från ryggsäcken och kopiera koden från hur Mulle-vadarna kommer fram.
+
 ![Spawn hole](images/spawn_hole.png "Spawn hole")
 
 ### Mulle-vaden kommer till hålet
 Detta funkar inte men är en första version
+
 ![Faulty mulle](images/mull_spawn_faulty.png "Faulty mulle")
 
 ### Inga kloner ska flyttas till hålet
 Vi kollar så att om man inte är en clone så får man flyttas
+
 ![No clone spawn](images/spawn_not_clone_in_hole.png "No clone spawn")
 
 ### Animera hålen
 Hålen kommer fram och försvinner efter ett tag.
+
 ![Animate spawner](images/spawner_complete.png "Animate Spawner")
 
 Kom ihåg att lägga till en sleep på 1.3 sekunder för varje "when I start as a clone" i Mulle-vadarna
